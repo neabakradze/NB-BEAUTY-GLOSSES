@@ -35,6 +35,72 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  background-color: bisque;
-  font-size: x-small; }
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+.header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: white;
+  z-index: 100000;
+  font-family: 'Open Sans Condensed', sans-serif; }
+  .header .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 95%;
+    margin: 0 auto; }
+    .header .header-box .nb-logo-div .nb-logo {
+      width: 75px; }
+    .header .header-box .header-navigation {
+      display: flex;
+      font-size: 20px;
+      margin-right: 1%;
+      font-size: 18px; }
+      @media (max-width: 900px) {
+        .header .header-box .header-navigation {
+          display: none; } }
+      .header .header-box .header-navigation .nav-a {
+        color: #982e54;
+        margin-left: 120px;
+        font-family: 'Roboto', sans-serif; }
+    .header .header-box .nav-bar {
+      display: none; }
+      @media (max-width: 900px) {
+        .header .header-box .nav-bar {
+          display: block;
+          width: 50px; } }
+    .header .header-box .close-bar {
+      display: none;
+      width: 50px; }
+  .header .resp-header {
+    display: none; }
+    .header .resp-header .close-button {
+      width: 50px;
+      margin: 10px 0 0 20px; }
+      @media (max-width: 900px) {
+        .header .resp-header .close-button {
+          display: none; } }
+  .header .side-bar {
+    height: 114vh;
+    width: 80%;
+    background-color: aliceblue;
+    z-index: 10000000000000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    animation-name: scroll;
+    transition: left 1s ease;
+    animation-duration: 1s; }
+
+@keyframes scroll {
+  from {
+    left: -80%; }
+  to {
+    left: 0; } }
