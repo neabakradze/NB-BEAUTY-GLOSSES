@@ -71,36 +71,121 @@ a {
         font-family: 'Roboto', sans-serif; }
     .header .header-box .nav-bar {
       display: none; }
+      @media (min-width: 900px) {
+        .header .header-box .nav-bar {
+          display: none; } }
       @media (max-width: 900px) {
         .header .header-box .nav-bar {
           display: block;
           width: 50px; } }
+    .header .header-box .display-block-none {
+      display: block; }
+      @media (max-width: 900px) {
+        .header .header-box .display-block-none {
+          display: block;
+          width: 50px; } }
+      @media (min-width: 900px) {
+        .header .header-box .display-block-none {
+          display: none  !important; } }
+    .header .header-box .fade-click {
+      display: block; }
+      @media (max-width: 900px) {
+        .header .header-box .fade-click {
+          display: block;
+          width: 50px; } }
+      @media (min-width: 900px) {
+        .header .header-box .fade-click {
+          display: none  !important; } }
     .header .header-box .close-bar {
       display: none;
       width: 50px; }
+  .header .search-product-full-screen {
+    display: none;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    border-top: 1px solid #b3b3b3;
+    padding: 12px 0 0 32px; }
+    .header .search-product-full-screen .search-product-input-full-screen {
+      border: none;
+      font-size: 15px;
+      width: 100%;
+      outline: none;
+      margin-left: 20px; }
+  .header .display-block-search-bar {
+    display: block; }
   .header .resp-header {
-    display: none; }
-    .header .resp-header .close-button {
-      width: 50px;
-      margin: 10px 0 0 20px; }
-      @media (max-width: 900px) {
-        .header .resp-header .close-button {
-          display: none; } }
-  .header .side-bar {
     height: 114vh;
-    width: 80%;
-    background-color: aliceblue;
+    width: 100%;
     z-index: 10000000000000000;
     position: absolute;
     top: 0;
-    left: 0;
-    display: block;
-    animation-name: scroll;
-    transition: left 1s ease;
-    animation-duration: 1s; }
+    left: -100%;
+    transition: all 1s ease;
+    display: flex; }
+    .header .resp-header .close-button {
+      width: 50px;
+      margin: 10px 0 0 20px; }
+    .header .resp-header .fade {
+      height: 100%;
+      width: 20%;
+      animation-name: fade;
+      transition: all 1s ease; }
+    .header .resp-header .second-box {
+      background-color: rgba(51, 51, 51, 0); }
 
-@keyframes scroll {
+@keyframes fade {
   from {
-    left: -80%; }
+    background-color: rgba(51, 51, 51, 0); }
   to {
-    left: 0; } }
+    background-color: rgba(51, 51, 51, 0.527); } }
+    .header .resp-header .contant {
+      width: 80%;
+      background-color: white;
+      height: 100%; }
+      .header .resp-header .contant .close-button {
+        width: 50px;
+        margin: 24px 0 54px 20px; }
+      .header .resp-header .contant .text {
+        padding: 10px;
+        color: #982e54;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        list-style-type: none;
+        height: 40px;
+        width: 87%;
+        margin: 0 auto; }
+        .header .resp-header .contant .text .nav-a {
+          color: #982e54;
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px; }
+      .header .resp-header .contant .search-text {
+        color: #982e54;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        list-style-type: none;
+        width: 87%;
+        margin: 0 auto; }
+        .header .resp-header .contant .search-text .nav-a {
+          color: #982e54;
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          font-size: 14px;
+          margin-left: 12px; }
+      .header .resp-header .contant .search-product {
+        width: 87%;
+        margin: 0 auto;
+        border-bottom: 1px solid #968888;
+        margin-bottom: 20px; }
+        .header .resp-header .contant .search-product .search-product-input {
+          border: none;
+          padding: 21px 10px 13px;
+          font-size: 16px;
+          outline: none; }
+  .header .side-bar {
+    height: 114vh;
+    width: 100%;
+    z-index: 10000000000000000;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease; }

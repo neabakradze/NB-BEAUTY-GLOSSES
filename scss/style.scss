@@ -6,6 +6,7 @@
     background-color: rgb(255, 255, 255);    
     z-index: 100000;
     font-family: 'Open Sans Condensed', sans-serif;
+    /////main header//////////////
     .header-box{
         display: flex;
         align-items: center;
@@ -32,54 +33,171 @@
                 margin-left: 120px;
                 font-family: 'Roboto', sans-serif;
             }
+        
            
         }
+    
+        ///////////////nav-burger////////////////////
          .nav-bar{
             display: none;
+            @media (min-width:900px) {
+                display: none; 
+            }
             @media (max-width:900px) {
-                display: block;
+                display: block ;
                 width: 50px;
             }
         }
+        .display-block-none{
+            display: block ;
+            @media (max-width:900px) {
+                display: block ;
+                width: 50px;
+            }
+            @media (min-width:900px) {
+                display: none  !important; 
+            }
+        }
+        .fade-click{
+            display: block;
+            @media (max-width:900px) {
+                display: block ;
+                width: 50px;
+            }
+            @media (min-width:900px) {
+                display: none  !important; 
+            }
+        }
+        ///////////close button//////////////////
         .close-bar{
             display: none;
             width: 50px;
         }
     }
-
-    .resp-header{
+  
+    .search-product-full-screen{
         display: none;
-       .close-button{
+        width: 100%;
+        background-color: white;
+        height: 50px;
+        border-top: 1px solid #b3b3b3;
+        padding: 12px 0 0 32px;
+       .search-product-input-full-screen{
+           border: none;
+           font-size: 15px;
+           width: 100%;
+           outline: none;
+           margin-left: 20px;
+       }
+       
+   }
+    .display-block-search-bar{
+        display: block;
+    }
+////////////////responsive-header/////////////////////////
+    .resp-header{
+        height: 114vh;
+    width: 100%;
+    z-index: 10000000000000000;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 1s ease;
+    display: flex;
+ .close-button{
+    width: 50px;
+    margin: 10px 0 0 20px;
+  
+   } 
+.fade{
+height: 100%;
+width: 20%;
+ animation-name: fade;
+ transition: all 1s ease;
+ 
+}
+.second-box {
+    background-color: rgba(51, 51, 51, 0);
+}
+@keyframes fade {
+    from {background-color: rgba(51, 51, 51, 0);}
+    to {
+        background-color: rgba(51, 51, 51, 0.527);}
+}
+
+.contant{
+    width: 80%;
+    background-color: white;
+    height: 100%;
+    .close-button{
         width: 50px;
-        margin: 10px 0 0 20px;
-        @media (max-width:900px){
-            display: none;
-        }
+        margin: 24px 0 54px 20px;
        } 
+       .text{
+            padding: 10px;
+            color: #982e54;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            list-style-type: none;
+            height: 40px;
+            width: 87%;
+            margin: 0 auto;
+            .nav-a{
+                color: #982e54;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px; 
+            }
+       }
+       .search-text{
+        color: #982e54;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        list-style-type: none;
+        width: 87%;
+        margin: 0 auto;
+        .nav-a{
+            color: #982e54;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px; 
+            font-size: 14px;
+            margin-left: 12px;
+        }
+       }
+       .search-product{
+        width: 87%;
+        margin: 0 auto;
+        border-bottom: 1px solid #968888;
+        margin-bottom: 20px;
+           .search-product-input{
+            border: none;
+            padding: 21px 10px 13px;
+            font-size: 16px;
+            outline: none;
+           }
+       }
+
+}
     }
     .side-bar{
          height: 114vh;
-         width: 80%;
-         background-color: aliceblue;
+         width: 100%;
          z-index: 10000000000000000;
          position: absolute;
-         top: 0;
          left: 0;
-         display: block;
-         animation-name: scroll;
-         transition: left 1s ease;
-         animation-duration: 1s;
-
+         transition: all 1s ease;
+         
     }
+
    
-  @keyframes scroll {
-      from{
-        left: -80%;
-      }
-      to{
-      left: 0;
-      }
-  }
+//   @keyframes scroll {
+//       from{
+//         left: -80%;
+//       }
+//       to{
+//       left: 0;
+//       }
+//   }
+
  
 }
     
