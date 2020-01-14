@@ -55,6 +55,25 @@ a {
     height: 100%;
     width: 95%;
     margin: 0 auto; }
+    .header .header-box .dropdown-bar {
+      width: 109px;
+      height: 102px;
+      position: absolute;
+      top: 58px;
+      right: 479px;
+      background-color: white;
+      display: none; }
+      @media (max-width: 900px) {
+        .header .header-box .dropdown-bar {
+          display: none !important; } }
+      .header .header-box .dropdown-bar .drop-li {
+        list-style-type: none;
+        margin: 10px 0 10px 24px; }
+        .header .header-box .dropdown-bar .drop-li .dropdown-a {
+          display: inline;
+          font-size: 18px; }
+    .header .header-box .display {
+      display: block; }
     .header .header-box .nb-logo-div .nb-logo {
       width: 75px; }
     .header .header-box .header-navigation {
@@ -67,8 +86,13 @@ a {
           display: none; } }
       .header .header-box .header-navigation .nav-a {
         color: #982e54;
-        margin-left: 120px;
+        margin-left: 66px;
         font-family: 'Roboto', sans-serif; }
+      .header .header-box .header-navigation .drop-down {
+        display: flex; }
+      .header .header-box .header-navigation .arrow {
+        width: 19px;
+        margin-left: 7px; }
     .header .header-box .nav-bar {
       display: none; }
       @media (min-width: 900px) {
@@ -106,6 +130,9 @@ a {
     height: 50px;
     border-top: 1px solid #b3b3b3;
     padding: 12px 0 0 32px; }
+    @media (max-width: 900px) {
+      .header .search-product-full-screen {
+        display: none !important; } }
     .header .search-product-full-screen .search-product-input-full-screen {
       border: none;
       font-size: 15px;
@@ -159,6 +186,21 @@ a {
           color: #982e54;
           font-family: 'Roboto', sans-serif;
           font-size: 18px; }
+      .header .resp-header .contant .resp-drop {
+        display: none; }
+        .header .resp-header .contant .resp-drop .resp-drop-li {
+          list-style-type: none;
+          margin: 0 auto;
+          border-bottom: 1px solid #968888;
+          padding-bottom: 2px;
+          width: 70%;
+          margin: 0 auto;
+          margin-bottom: 5px;
+          font-family: 'Roboto', sans-serif; }
+          .header .resp-header .contant .resp-drop .resp-drop-li .resp-dropdown-a {
+            color: #F38CB1; }
+      .header .resp-header .contant .display {
+        display: block; }
       .header .resp-header .contant .search-text {
         color: #982e54;
         font-family: 'Roboto', sans-serif;
