@@ -18,12 +18,6 @@ document.querySelector('.close-button').addEventListener('click', () => {
     navBurger.classList.add('display-block-none')
 });
 
-///////////////SEARCH BAR///////////////////
-document.querySelector('.search-button').addEventListener('click', () => {
-    // document.querySelector('.search-product-full-screen').style.display = 'block';
-    document.querySelector('.search-product-full-screen').classList.toggle('display-block-search-bar');
-});
-
 ///////////product drop down bar////////////////
 document.querySelector('.drop-down').addEventListener('click', () => {
     // document.querySelector('.search-product-full-screen').style.display = 'block';
@@ -288,4 +282,52 @@ respCartBtn.addEventListener('click', () => {
     overlay.classList.toggle('visibility');
     cartDiv.classList.toggle('visibility2');
 
+});
+
+///////////search/////////////
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+
+
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+input = document.getElementById("myInput");
+input.addEventListener('keyup', () => {
+    if (document.querySelector('.input-data').value.length > 0) {
+        document.querySelector('.ul-data').classList.remove('block');
+    } if (document.querySelector('.input-data').value.length === 0) {
+        document.querySelector('.ul-data').classList.add('block');
+    };
+});
+
+
+document.querySelector('.input-data2').addEventListener('keyup', () => {
+    if (document.querySelector('.input-data2').value.length > 0) {
+        document.querySelector('.ul-data2').classList.remove('block');
+    } if (document.querySelector('.input-data2').value.length === 0) {
+        document.querySelector('.ul-data2').classList.add('block');
+    };
+});
+
+
+///////////////SEARCH BAR///////////////////
+document.querySelector('.search-button').addEventListener('click', () => {
+    // document.querySelector('.search-product-full-screen').style.display = 'block';
+    input.classList.toggle('block2');
 });
