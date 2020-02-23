@@ -16,19 +16,22 @@
         width: 95%;
         margin: 0 auto;
       .dropdown-bar{
-        width: 109px;
+        width: 138px;
         height: 102px;
         position: absolute;
         top: 58px;
-        right: 479px;
+        right: 439px;
         background-color: white;
         display: none;
+        border: solid 1px lightgray;
+        border-radius: 9px;
         @media (max-width:900px) {
             display: none !important;
         }
         .drop-li{
             list-style-type: none;
-            margin: 10px 0 10px 24px;
+            padding: 5px 0 10px 15px;
+
             .dropdown-a{
                 display: inline;
                 font-size: 18px;
@@ -444,6 +447,11 @@ grid-row-gap: 2rem;
 }
 .card-img-top{
     width: 100%;
+    @media (max-width:560px ){
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+    }
 }
 .col-display-flex{
     display: flex;
@@ -452,6 +460,9 @@ grid-row-gap: 2rem;
 }
 .col-margin-right{
     margin-right: 5%;
+    @media (max-width:560px ){
+        margin-right: 0%;
+    }
 }
 .font-color{
     font-size: 17px;
@@ -613,6 +624,125 @@ grid-row-gap: 2rem;
     color: black;
 }
 
+//////////slider////////@extend/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(156, 109, 109, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(238, 196, 196);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #803b3b;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  .border{
+    width: 70%;
+    margin: 0 auto;
+    border: dotted pink 4px;
+    margin-top: 90px;
+    padding: 3% 2% 1.5% 2%;
+    border-radius: 15px;
 
+  }
 
-
+//////////////footer////////////
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    background-color: #982e54;
+    margin-top: 100px;
+}
+.footer-ul{
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+    @media (max-width:945px) {
+        width: 70%;
+    }
+}
