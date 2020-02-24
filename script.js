@@ -333,30 +333,23 @@ document.querySelector('.search-button').addEventListener('click', () => {
 });
 
 
-///////////////slider/////////////////
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+////switcer///////////
+var imgWrapper = document.querySelector('.single-img');
+var img1 = document.getElementById('img1');
+var img2 = document.getElementById('img2');
+var img3 = document.getElementById('img3');
+console.log(imgWrapper, img1, img2, img3);
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+img1.addEventListener('click', () => {
+    imgWrapper.style.backgroundImage = "url('glosses/different-glosses-packed.jpg')";
+});
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
+img2.addEventListener('click', () => {
+    imgWrapper.style.backgroundImage = "url('glosses/slider-img1.jpg')";
+});
+
+img3.addEventListener('click', () => {
+    imgWrapper.style.backgroundImage = "url('glosses/slider-img3.jpg')";
+});
+

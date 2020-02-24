@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NB BEAUTY</title>
+    <title>GLOSS-BUNDLE</title>
     <link rel="icon" href="glosses/nb-purple-logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars-o.css"
+        rel="stylesheet" />
 </head>
 
 <body>
+
     <!-- HEADER -->
     <header class="header">
         <div class="header-box">
@@ -33,7 +34,9 @@
                     </li>
                     <img class="arrow " src="glosses/arrow.svg" alt="">
                 </div>
-
+                <li>
+                    <a class="nav-a" href="">PRODUCT</a>
+                </li>
                 <li class="search-button nav-a">
                     SEARCH
                 </li>
@@ -73,10 +76,10 @@
             title="Type in a name">
 
         <ul class="ul-data block" id="myUL">
-            <li class="li-data"><a class="a-data" href="products.html">Glosses</a></li>
+            <li class="li-data"><a class="a-data" href="https://www.youtube.com/watch?v=aYXZoxltYuU">Glosses</a></li>
             <li class="li-data"><a class="a-data" href="#">Rose Gloss</a></li>
 
-            <li class="li-data"><a class="a-data" href="test.html">Bundle Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="#">Bundle Gloss</a></li>
             <li class="li-data"><a class="a-data" href="#">Euphoria Gloss</a></li>
 
             <li class="li-data"><a class="a-data" href="#">Peach Gloss</a></li>
@@ -160,118 +163,45 @@
 
     </div>
 
+    <div class="product-wrapper">
 
-    <!-- ///////////introduction//////////// -->
-    <div class="introduction">
-        <div class="intro-wrapper">
-            <div class="intro-text">LIPGLOSS COLLECTION</div>
-            <div class="intro-btn">
-                <a style="color: white;" href="#products">SHOP NOW</a> </div>
+        <div class="product-img-box">
+
+            <div style="background-image: url('glosses/different-glosses-packed.jpg');" class="single-img"></div>
+
+            <div class="img-switcher">
+                <img id="img1" src="glosses/different-glosses-packed.jpg" alt="" class="img1-switcher">
+                <img id="img2" src="glosses/slider-img1.jpg" alt="" class="img1-switcher">
+                <img id="img3" src="glosses/slider-img3.jpg" alt="" class="img1-switcher">
+            </div>
+
         </div>
+
+
+        <div class="product-descript">
+
+            <h4 class="card-title  col-display-flex  font-color2">GLOSS-BUNDLE</h4>
+            <p class="card-text2  col-display-flex">Price: $0.5</p>
+            <a href="#" id="open" data-name="ROSE-GLOSS" data-price="0.5"
+                class="add-to-cart2 btn btn-primary  col-display-flex  add-cart-btn">Add
+                to cart</a>
+
+            <p class="product-p"> This is the perfect Gloss to moisturise your lips but to also give them color and make
+                them look plump.
+            </p>
+            <div class="rateing">
+                <select id="example">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+
     </div>
-    <!-- ///////////end of introduction//////////// -->
 
-
-    <!-- /////////products/////////////// -->
-    <section id="products" class="products">
-        <div class="section-title">OUR PRODUCTS</div>
-
-        <!-- /////center product wrapper///// -->
-
-        <!-- Main -->
-        <div class="container">
-            <div class="row">
-                <div class="col col-display-flex">
-                    <div class="card  card-resp2  col-margin-right">
-                        <img class="card-img-top" src="glosses/hotpink-glosses.jpg" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title  col-display-flex  font-color">ROSE-GLOSS</h4>
-                            <p class="card-text  col-display-flex">Price: $0.5</p>
-                            <a href="#" id="open" data-name="ROSE-GLOSS" data-price="0.5"
-                                class="add-to-cart btn btn-primary  col-display-flex  add-cart-btn">Add
-                                to cart</a>
-                        </div>
-                    </div>
-
-
-                    <div class="col  col-margin-right">
-                        <div class="card  card-resp2">
-                            <img class="card-img-top" src="glosses/cottoncandy-glosses.jpg" alt="Card image cap">
-                            <div class="card-block">
-                                <h4 class="card-title  col-display-flex  font-color">CANDY-GLOSS</h4>
-                                <p class="card-text  col-display-flex">Price: $1.22</p>
-                                <a href="#" id="open" data-name="CANDY-GLOSS" data-price="0.5"
-                                    class="add-to-cart btn btn-primary  col-display-flex  add-cart-btn">Add
-                                    to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card card-resp">
-                            <img class="card-img-top" src="glosses/peach-and-clear-glosses.jpg" alt="Card image cap">
-                            <div class="card-block">
-                                <h4 class="card-title  col-display-flex  font-color">PEACH-GLOSS</h4>
-                                <p class="card-text  col-display-flex">Price: $5.00</p>
-                                <a href="#" id="open" data-name="PEACH-GLOSS" data-price="5"
-                                    class="add-to-cart btn btn-primary  col-display-flex  add-cart-btn">Add
-                                    to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div style="margin-top: 40px;" class="row">
-                    <div class="col col-display-flex">
-                        <div class="card  card-resp2  col-margin-right">
-                            <img class="card-img-top" src="glosses/euphoria.jpg" alt="Card image cap">
-                            <div class="card-block">
-                                <h4 class="card-title  col-display-flex  font-color">EUPHORIA-GLOSS</h4>
-                                <p class="card-text  col-display-flex">Price: $0.5</p>
-                                <a href="#" data-name="EUPHORIA-GLOSS" data-price="0.5"
-                                    class="add-to-cart btn btn-primary  col-display-flex  add-cart-btn">Add
-                                    to cart</a>
-                            </div>
-                        </div>
-
-
-                        <div class="col col-margin-right">
-                            <div class="card card-resp2">
-                                <img class="card-img-top" src="glosses/3-clear-glosses.jpg" alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title  col-display-flex  font-color">CLEAR-GLOSS</h4>
-                                    <p class="card-text  col-display-flex">Price: $1.22</p>
-                                    <a href="#" data-name="CLEAR-GLOSS" data-price="1.22"
-                                        class="add-to-cart btn btn-primary  col-display-flex  add-cart-btn">Add to
-                                        cart</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card  card-resp">
-                                <img class="card-img-top" src="glosses/different-glosses-packed.jpg"
-                                    alt="Card image cap">
-                                <div class="card-block">
-                                    <h4 class="card-title  col-display-flex  font-color">BUNDLE-GLOSS</h4>
-                                    <p class="card-text  col-display-flex">Price: $5</p>
-                                    <a href="#" data-name="BUNDLE-GLOSS" data-price="5"
-                                        class="add-to-cart btn btn-primary  col-display-flex  add-cart-btn">Add
-                                        to cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-    </section>
-
-
-
-
-    <!-- ////////end of products/////////////// -->
 
 
     <!-- /////////add to cart div/////////////// -->
@@ -315,43 +245,6 @@
     </div>
     <!-- /////////end of add to cart div/////////////// -->
 
-    <!-- /////////////////slider////////////// -->
-    <div class="border">
-
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-
-                <img src="glosses/slider-glossy-lids.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-
-                <img src="glosses/SLIDER.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-
-                <img style="height: 505px;width: 100%;" src="glosses/SLIDER1.jpg" style="width:100%">
-
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-    </div>
-    <!-- /////////////////end of slider////////////// -->
 
     <footer class="footer">
         <ul class="footer-ul">
@@ -367,9 +260,41 @@
         </ul>
     </footer>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars-o.css"
+        rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="slider.js"></script>
+    <script src="product1.js"></script>
+
+
 </body>
 
 </html>

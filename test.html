@@ -33,7 +33,9 @@
                     </li>
                     <img class="arrow " src="glosses/arrow.svg" alt="">
                 </div>
-
+                <li>
+                    <a class="nav-a" href="">PRODUCT</a>
+                </li>
                 <li class="search-button nav-a">
                     SEARCH
                 </li>
@@ -73,10 +75,10 @@
             title="Type in a name">
 
         <ul class="ul-data block" id="myUL">
-            <li class="li-data"><a class="a-data" href="products.html">Glosses</a></li>
+            <li class="li-data"><a class="a-data" href="https://www.youtube.com/watch?v=aYXZoxltYuU">Glosses</a></li>
             <li class="li-data"><a class="a-data" href="#">Rose Gloss</a></li>
 
-            <li class="li-data"><a class="a-data" href="test.html">Bundle Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="#">Bundle Gloss</a></li>
             <li class="li-data"><a class="a-data" href="#">Euphoria Gloss</a></li>
 
             <li class="li-data"><a class="a-data" href="#">Peach Gloss</a></li>
@@ -161,20 +163,57 @@
     </div>
 
 
-    <!-- ///////////introduction//////////// -->
-    <div class="introduction">
-        <div class="intro-wrapper">
-            <div class="intro-text">LIPGLOSS COLLECTION</div>
-            <div class="intro-btn">
-                <a style="color: white;" href="#products">SHOP NOW</a> </div>
+
+
+
+
+    <div class="product-wrapper">
+
+        <div class="product-img-box">
+
+            <div style="background-image: url('glosses/different-glosses-packed.jpg');" class="single-img"></div>
+
+            <div class="img-switcher">
+                <img id="img1" src="glosses/different-glosses-packed.jpg" alt="" class="img1-switcher">
+                <img id="img2" src="glosses/slider-img1.jpg" alt="" class="img1-switcher">
+                <img id="img3" src="glosses/slider-img3.jpg" alt="" class="img1-switcher">
+            </div>
+
         </div>
+
+
+        <div class="product-descript">
+
+            <h4 class="card-title  col-display-flex  font-color2">GLOSS-BUNDLE</h4>
+            <p class="card-text2  col-display-flex">Price: $0.5</p>
+            <a href="#" id="open" data-name="ROSE-GLOSS" data-price="0.5"
+                class="add-to-cart2 add-to-cart  btn btn-primary  col-display-flex  add-cart-btn">Add
+                to cart</a>
+
+            <p class="product-p"> This is the perfect Gloss to moisturise your lips but to also give them color and make
+                them look plump.
+            </p>
+
+        </div>
+
     </div>
-    <!-- ///////////end of introduction//////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- /////////products/////////////// -->
-    <section id="products" class="products">
-        <div class="section-title">OUR PRODUCTS</div>
+    <section class="products">
+        <div class="section-title">RECOMMENDED PRODUCTS</div>
 
         <!-- /////center product wrapper///// -->
 
@@ -315,43 +354,7 @@
     </div>
     <!-- /////////end of add to cart div/////////////// -->
 
-    <!-- /////////////////slider////////////// -->
-    <div class="border">
 
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-
-                <img src="glosses/slider-glossy-lids.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-
-                <img src="glosses/SLIDER.jpg" style="width:100%">
-
-            </div>
-
-            <div class="mySlides fade">
-
-                <img style="height: 505px;width: 100%;" src="glosses/SLIDER1.jpg" style="width:100%">
-
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-    </div>
-    <!-- /////////////////end of slider////////////// -->
 
     <footer class="footer">
         <ul class="footer-ul">
@@ -367,9 +370,12 @@
         </ul>
     </footer>
 
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script src="slider.js"></script>
 </body>
 
 </html>

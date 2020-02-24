@@ -1,0 +1,73 @@
+.product-wrapper{
+width: 80%;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 60px;
+}
+
+.product-img-box{
+width: 50%;
+}
+
+.single-img{
+    margin: 0 auto;
+    background-size: cover;
+    width: 74%;
+    height: 500px;
+}
+.img-switcher{
+    display: flex;
+    width: 74%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.img1-switcher{
+width: 30%;
+}
+
+//////description
+.product-descript{
+    height: 356px;
+}
+.font-color2{
+    font-size: 26px;
+    color: #982e54;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 17px;
+    margin-bottom: 22px;
+}
+.card-text2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+.add-to-cart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 183px;
+    height: 38px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 19px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #985a85;
+}
+.product-p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.rateing{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.br-theme-fontawesome-stars-o .br-widget a.br-selected:after {
+    content: '\f005';
+    color: pink !important;
+}
