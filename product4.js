@@ -325,7 +325,6 @@ document.querySelector('.input-data2').addEventListener('keyup', () => {
     };
 });
 
-
 ///////////////SEARCH BAR///////////////////
 document.querySelector('.search-button').addEventListener('click', () => {
     // document.querySelector('.search-product-full-screen').style.display = 'block';
@@ -339,7 +338,6 @@ document.querySelector('.search-button').addEventListener('click', () => {
 });
 
 
-
 ////switcer///////////
 var imgWrapper = document.querySelector('.single-img');
 var img1 = document.getElementById('img1');
@@ -348,7 +346,7 @@ var img3 = document.getElementById('img3');
 console.log(imgWrapper, img1, img2, img3);
 
 img1.addEventListener('click', () => {
-    imgWrapper.style.backgroundImage = "url('glosses/different-glosses-packed.jpg')";
+    imgWrapper.style.backgroundImage = "url('glosses/peach-and-clear-glosses.jpg')";
 });
 
 img2.addEventListener('click', () => {

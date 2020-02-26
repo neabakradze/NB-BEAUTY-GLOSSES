@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NB BEAUTY</title>
+    <title>NB BEAUTY-GLOSSES</title>
     <link rel="icon" href="glosses/nb-purple-logo.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
@@ -18,7 +18,9 @@
         <div class="header-box">
             <!-- NB LOGO -->
             <div class="nb-logo-div">
-                <img class="nb-logo" src="glosses/Untitled-1 copy.svg" alt="">
+                <a href="index.html">
+                    <img class="nb-logo" src="glosses/Untitled-1 copy.svg" alt="">
+                </a>
             </div>
             <!-- search section -->
 
@@ -33,9 +35,7 @@
                     </li>
                     <img class="arrow " src="glosses/arrow.svg" alt="">
                 </div>
-                <li>
-                    <a class="nav-a" href="">PRODUCT</a>
-                </li>
+
                 <li class="search-button nav-a">
                     SEARCH
                 </li>
@@ -54,9 +54,9 @@
 
 
             <!-- PRODUCT DROP DOWN BAR -->
-            <div class="dropdown-bar">
+            <div style="right: 300px; border: none;" class="dropdown-bar">
                 <li class="drop-li">
-                    <a class="dropdown-a" href="">GLOSSES</a>
+                    <a class="dropdown-a" href="products.html">GLOSSES</a>
                 </li>
                 <li class="drop-li">
                     <a class="dropdown-a" href="">LIP OILS</a>
@@ -73,18 +73,18 @@
         <!-- ////////////////////////search box/responsive////////////////// -->
         <input class="input-data" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for products.."
             title="Type in a name">
-
         <ul class="ul-data block" id="myUL">
-            <li class="li-data"><a class="a-data" href="https://www.youtube.com/watch?v=aYXZoxltYuU">Glosses</a></li>
-            <li class="li-data"><a class="a-data" href="#">Rose Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="products.html">Glosses</a></li>
+            <li class="li-data"><a class="a-data" href="product2.html">Rose Gloss</a></li>
 
-            <li class="li-data"><a class="a-data" href="#">Bundle Gloss</a></li>
-            <li class="li-data"><a class="a-data" href="#">Euphoria Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="test.html">Bundle Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="product5.html">Euphoria Gloss</a></li>
 
-            <li class="li-data"><a class="a-data" href="#">Peach Gloss</a></li>
-            <li class="li-data"><a class="a-data" href="#">Clear Gloss</a></li>
-            <li class="li-data"><a class="a-data" href="#">Candy Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="product4.html">Peach Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="product6.html">Clear Gloss</a></li>
+            <li class="li-data"><a class="a-data" href="product3.html">Candy Gloss</a></li>
         </ul>
+
 
         <!-- ////////////////////////END OF search box/responsive////////////////// -->
 
@@ -101,17 +101,16 @@
                     placeholder="Search for products.." title="Type in a name">
 
                 <ul style="margin-bottom: 20px;" class="ul-data2 block" id="myUL">
-                    <li class="li-data2"><a class="a-data2"
-                            href="https://www.youtube.com/watch?v=aYXZoxltYuU">Glosses</a>
+                    <li class="li-data2"><a class="a-data2" href="products.html">Glosses</a>
                     </li>
-                    <li class="li-data2"><a class="a-data2" href="#">Rose Gloss</a></li>
+                    <li class="li-data2"><a class="a-data2" href="product2.html">Rose Gloss</a></li>
 
-                    <li class="li-data2"><a class="a-data2" href="#">Bundle Gloss</a></li>
-                    <li class="li-data2"><a class="a-data2" href="#">Euphoria Gloss</a></li>
+                    <li class="li-data2"><a class="a-data2" href="test.html">Bundle Gloss</a></li>
+                    <li class="li-data2"><a class="a-data2" href="product5.html">Euphoria Gloss</a></li>
 
-                    <li class="li-data2"><a class="a-data2" href="#">Peach Gloss</a></li>
-                    <li class="li-data2"><a class="a-data2" href="#">Clear Gloss</a></li>
-                    <li class="li-data2"><a class="a-data2" href="#">Candy Gloss</a></li>
+                    <li class="li-data2"><a class="a-data2" href="product4.html">Peach Gloss</a></li>
+                    <li class="li-data2"><a class="a-data2" href="product6.html">Clear Gloss</a></li>
+                    <li class="li-data2"><a class="a-data2" href="product3.html">Candy Gloss</a></li>
                 </ul>
                 <li class="text">
                     <a class="nav-a" href="">MAIN</a>
@@ -134,10 +133,8 @@
                         <a class="resp-dropdown-a" href="">EYELASH </a>
                     </li>
                 </div>
-                <li class="text">
-                    <a class="nav-a" href="">ACCOUNT</a>
-                </li>
-                <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+
+                <nav style="    margin-top: 15px;" class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
                     <div class="row">
                         <div class="col">
                             <button type="button" id="resp-add-item-btn" class="btn btn-primary  cart-btn-resp"
@@ -145,7 +142,15 @@
                                 (<span style="font-size: 14px;" class="total-count"></span>)</button>
                         </div>
                 </nav>
+                <li class="resp-header-text">
+                    <a class="nav-a text-color" href="index.html">MAIN</a>
+                </li>
+                <li id="product-drop-bar" class="resp-header-text nav-a">
+                    <a class="text-color" href="products.html">
+                        PRODUCT
+                    </a>
 
+                </li>
             </div>
             <!-- ///////////clear box that makes the side bar disapear/////// -->
             <div class="second-box fade">
